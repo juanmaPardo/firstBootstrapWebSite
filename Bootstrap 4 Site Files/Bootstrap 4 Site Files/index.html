@@ -21,8 +21,19 @@
 		<!--Container fluid creo que lo que hace es que ocupe un 100% de la pantalla-->
 		<div class="container-fluid">
 			<!--Lo de navbar-brand creo que implica que esta foto queremos que aparesca dentro de la clase que 
-				definimos como navbar-->
-			<a class="navbar-brand" href="index.html" src="img/logo.png"></a>
+				definimos como navbar, el tag <a> es siempre para referenciar algo que contenga un link o img-->
+			<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+			<!--la class se llama navbar-toggler porque lo que estamos creando aca es el boton que tiene las 3 lineas
+				que cuando lo clickeas se abre la navegacion, un toggler es como un switch por eso el nombre, este boton solo aparece cuando estamos en la version mobil, lo de type="Button" es porque nececitamos que se comporte como tal, lo de collapsar no entiendo bien para que pero creo que es para que aparescan las opcioens cuando lo cliqueas, y lo de dataTarget es para-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" 
+			data-target="#navbarResponsive">
+					<!-- el tagmark span es para crear una clase in line y dar estilos a algo, es como el div pero 
+						la diferencia es que el div esta pensado en blocke y el span esta pensado par algo inline,
+						en este caso nececitamos crear el span para agregar las 3 lineas dentro del boton que creamos,
+						algo a detallar es que el nombre de la clase no es random, creo que esto hay que pensarlo como si estuviesemos escribiendo un path, tenemos que decir que queremos hacer y dentro de donde lo queremos hacer, para que aparescan las tres lineas tenemos que decir, bueno quiero que las tres lineas aparescan dentro de la clase navbar-toggler en forma de un icon, lo de icon debe estar definido en bootstrap porque si le cambias el nombre no funciona.
+					-->
+					<span class="navbar-toggler-icon"></span>	
+					</button>
 		</div>
 
 	</nav>
@@ -78,9 +89,9 @@
 
 
 
-<!--- Check out my course on Udemy! -->
+<!--- Check out my course on Udemy!
 <div class="udemy-course" style="position: fixed; bottom: 0; right: 0; margin-bottom: -5px; z-index: 100;">
 	<a href="http://bit.ly/advanced-bootstrap-course" target="_blank" style="z-index: 999!important; cursor: pointer!important;"><img src="https://www.w3newbie.com/wp-content/uploads/nuno-udemy-banner.png" style="max-width: 100%; min-width: 100%;"></a>
 </div>
-
+-->
 
