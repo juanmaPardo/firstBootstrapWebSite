@@ -24,7 +24,7 @@
 				definimos como navbar, el tag <a> es siempre para referenciar algo que contenga un link o img-->
 			<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
 			<!--la class se llama navbar-toggler porque lo que estamos creando aca es el boton que tiene las 3 lineas
-				que cuando lo clickeas se abre la navegacion, un toggler es como un switch por eso el nombre, este boton solo aparece cuando estamos en la version mobil, lo de type="Button" es porque nececitamos que se comporte como tal, lo de collapsar no entiendo bien para que pero creo que es para que aparescan las opcioens cuando lo cliqueas, y lo de dataTarget es para-->
+				que cuando lo clickeas se abre la navegacion, un toggler es como un switch por eso el nombre, este boton solo aparece cuando estamos en la version mobil, lo de type="Button" es porque nececitamos que se comporte como tal, lo de collapsar no entiendo bien para que pero creo que es para que aparescan las opcioens cuando lo cliqueas, lo de data-toggle es para lo que va a pasar cuando clickeemos en el boton, en este caso el nombre collapse es completamente arbitrario, pero precisamos darle un nombre para luego poder referenciarlo y decir que queremos que se despliege una ves clickeado, es decir la data que va a contener. Los data-(lo que sea) no tienen ninguna visual representation,pero que luego podes acceder y variar con css o javascript y lo de dataTarget es una especie de referencia, cuando clickeemos este boton lo que va a pasar es que van a actuar los elementos que esten apuntando a esta "id", si lo queremos llamar asi, me lo imagino como un trigger que desencadena un evento y los oyentes son todos los que tienen como id="navbarResponsive" y como clase="collapse (accion realiza)", el toggle y el target van de la mano parece ser-->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" 
 			data-target="#navbarResponsive">
 					<!-- el tagmark span es para crear una clase in line y dar estilos a algo, es como el div pero 
@@ -33,7 +33,33 @@
 						algo a detallar es que el nombre de la clase no es random, creo que esto hay que pensarlo como si estuviesemos escribiendo un path, tenemos que decir que queremos hacer y dentro de donde lo queremos hacer, para que aparescan las tres lineas tenemos que decir, bueno quiero que las tres lineas aparescan dentro de la clase navbar-toggler en forma de un icon, lo de icon debe estar definido en bootstrap porque si le cambias el nombre no funciona.
 					-->
 					<span class="navbar-toggler-icon"></span>	
-					</button>
+			</button>
+			<div class="collapse navbar-collapse" id=navbarResponsive>
+				<!--Aca agregamos lo que va a pasar una ves apretado el boton, en este caso queremos desplegar una 
+					lista de elementos que serian la navigation bar, acordarte que la tag ul es para las unorder list
+					el ml-auto es para que cuando se expanda la navigation bar aparesca alineada a la derecha de la pantalla, si no pusiesemos eso apareceria en el centro por default y quedaria super feo
+				-->
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<!--EL a, es para que cuando lo clickeamos nos lleve a algun lado, ese lado esta especificado
+							en el href-->
+						<a class="nav-link" href="#">Home</a>
+				    </li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+				    </li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Services</a>
+				    </li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Team</a>
+				    </li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Connect</a>
+				    </li>				    				    				    
+				</ul>
+			</div>
+
 		</div>
 
 	</nav>
