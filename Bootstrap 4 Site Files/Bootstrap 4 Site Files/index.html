@@ -8,11 +8,24 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- Nos permite agregar los iconitos de las redes sociales -->
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
+	<!-- navbar-expand-md implica que en md(medium devices) ya podemos mostrar la navegacion en su version extendida
+		y no en una version para un mobil, lo de navbar-light y bg-light es para el tema del fondo del menu, creo que
+		con eso le damos un fondo blanco con las letras negras, de eso se encarga bootstrap, lo del sticky-top
+		implica eso de que por mas que scrollees para abajo siempre estas viendo el top con la barra de navegacion-->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<!--Container fluid creo que lo que hace es que ocupe un 100% de la pantalla-->
+		<div class="container-fluid">
+			<!--Lo de navbar-brand creo que implica que esta foto queremos que aparesca dentro de la clase que 
+				definimos como navbar-->
+			<a class="navbar-brand" href="index.html" src="img/logo.png"></a>
+		</div>
 
+	</nav>
 <!-- Navigation -->
 
 
