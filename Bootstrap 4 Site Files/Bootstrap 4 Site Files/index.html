@@ -127,9 +127,44 @@
 
 
 <!--- Jumbotron -->
+	<div class="container-fluid padding">
+		<div class="row jumbotron">
+			<!--Aca seleccionamos cuantas columnas queremos que ocupe de acuerdo a la medida de pantalla,
+				tenemos que cuberir todos los tipos para que se pueda ver desde cualquier aparato, creo
+				que las columnas de una pantalla sea la que sea es de 12 columnas, osea que para las dos mas
+				pequeñas te ocupa toda la pantalla y para el resto se redistribuye de otra manera para que
+				puedas poner algo a la derecha si queres, seria a lo ancho, si queres agregar otra cosa en las chiquitas se va a poner abajo no al costado porque no tiene espacio, en cambio con la mas grande por ejemplo tenemos 2 columnas libres para poner algo en la misma linea-->
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+				<p class="lead">Esta es simplemente una pagina de prueba para aprender a utilizar
+				bootstrap, espero que se disfrute la foto de los caniggia, referentes de la literatura
+				anglosagona e principales candidatos al premio nobel de la paz</p>
+			</div>	
 
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+				<a href="#">
+					<button type="button" class="btn btn-outline-secondary btn-lg">Redirect</button>
+				</a>
+			</div>
+		</div>
+	</div>
 
 <!--- Welcome Section -->
+
+	<div class="container-fluid">
+		<!--Cuando pones espacios entre clases es tener mas de una clase para este div, row y text-center son clases de bootstrap, welcome es una que vamos a estilar nosotros por nuestra propia cuenta-->
+		<div class="row welcome text-center">
+			<!--En todas las pantallas queremos que ocupe el 100% de la pantalla-->
+			<div class="col-12">
+				<h1 class="display-4">Are you ENTERTAINED?</h1>
+				<hr><!--La linea esa divisora-->
+			</div>
+			<div class="col-12">
+				<p class="lead">His arms are heavy, knees weak, arms are heavy, there's vomit on his sweater
+				already, moooomss spagetti, he's nerveous, but on the surface he looks calm and ready, to drop
+				bombs, but he keeps on forgetting whay he wrote down, the whole crowd goes so lowd,time's up over BLAH</p>
+			</div>
+		</div>
+	</div>
 
 
 <!--- Three Column Section -->
