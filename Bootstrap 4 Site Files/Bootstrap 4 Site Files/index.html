@@ -13,6 +13,8 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
+	<!-- Navigation -->
+
 	<!-- navbar-expand-md implica que en md(medium devices) ya podemos mostrar la navegacion en su version extendida
 		y no en una version para un mobil, lo de navbar-light y bg-light es para el tema del fondo del menu, creo que
 		con eso le damos un fondo blanco con las letras negras, de eso se encarga bootstrap, lo del sticky-top
@@ -42,7 +44,8 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
 						<!--EL a, es para que cuando lo clickeamos nos lleve a algun lado, ese lado esta especificado
-							en el href-->
+							en el href, cada vez que decimos (Clase padre)-(clase), implica que la clase va a estar
+							ubicada smoothly dentro de la clase padre, es importante siempre especificarlo de esa manera para que bootstrap nos solucione la vida-->
 						<a class="nav-link" href="#">Home</a>
 				    </li>
 					<li class="nav-item">
@@ -63,10 +66,31 @@
 		</div>
 
 	</nav>
-<!-- Navigation -->
 
 
 <!--- Image Slider -->
+	<!-- un carousel slide son esos que despliegan una imagen y vos apretas un click a la derecha y se despliega como un carousel(slidesshow) y te muestra la siguiente imagen, este carousel esta definido en bootstrap, para
+	crearlo necesariamente tenemos que definir como clase carousel slide y seleccionar data-ride tal cual lo ves aca, a su vez hay que indicar los indicators en forma de lista, los indicators son esos puntitos o linitas debajo del slide que nos llevan a las diferentes imagenes-->
+	<div id="slides" class="carousel slide" data-ride="carousel">
+		<ul class="carousel-indicators">
+			<!-- el data-target es para que referencie al id que creamos recien de slides, lo del to asumo que sera por un tema posicional de los slides, como para ver cual mostras primero, el primero siempre tiene que tener como class="active", dios sabra porque-->
+			<li data-target="#slides" data-slide-to="0" class="active"></li>
+			<li data-target="#slides" data-slide-to="1"></li>
+			<li data-target="#slides" data-slide-to="2"></li>
+		</ul>
+		<!--el carousel inner es para basicamente incluir las imagines que estaran incluidas en el slide-->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/background.png">
+			</div>
+			<div class="carousel-item">
+				<img src="img/background2.png">
+			</div>	
+			<div class="carousel-item">
+				<img src="img/background3.png">
+			</div>					
+		</div>
+	</div>
 
 
 <!--- Jumbotron -->
